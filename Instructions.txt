@@ -1,0 +1,37 @@
+Note : Download the required packages for this project through pip
+
+a.)For Face recognition, Go to face_detect directory and follow the Instructions mentioned.
+
+b.) Go to : https://drive.google.com/file/d/15C14WtxGqJiawE9r3lw5U8wFnwBu3u5b/view?usp=sharing
+	1) Download the eye_detector.dat file from the above link
+	2) After downloading save it in the project directory.
+
+c.)Use a laptop having Webcam or Connect a Webcam to the PC.
+
+d.)If an OBD module is available :
+
+    1) Connect the OBD module to the Car and start the Car Engine.
+    2) Now Take a HC-05 module, 
+            i)Make the HC-05 module as a master. (How to make HC05 as master : https://youtu.be/hyME1osgr7s)
+            (In the above mentioned Video only make one HC-05 as master. Here, OBD is the slave.)
+            ii)Download this App for finding OBD Address : https://play.google.com/store/apps/details?id=com.ccpcreations.android.bluetoothmacfinder&hl=en 
+            iii)Bind it with the OBD module bluetooth address.
+            iv)Wait until both devices get paired.
+    3) Now connect the master HC-05 to the server(laptop / raspberry pi)
+    4) Open Device manager and Note the COM port assigned to the HC05 bluetooth module.
+    5) Open Serial_Highway_project_CoOrdinates.py python file and change the noted COM port in the instructed field.
+    6) Change the names of the ID_1 , ID_2 in the required fields. (optional, Even without changing program works)
+    7) Now for running the python file,
+            i)Press win+R
+            ii)Type cmd and press Enter
+            iii)Now type   cd <Location of the project folder in your PC> (In my case I have typed, cd C:\Users\*****\Documents\My_projects\highway_project ) and Press Enter.
+            iv)Now type 	python Serial_Highway_project_CoOrdinates.py -dd eye_detector.dat 	and Press Enter.
+
+e.)If an OBD module is not available :
+
+    1) Change the names of the ID_1 , ID_2 in the required fields. (optional, Even without changing program works)
+    2) Now for running the python file,
+            i)Press win+R
+            ii)Type cmd and press Enter
+            iii)Now type   cd <Location of the project folder in your PC> ( In my case I have typed, cd C:\Users\*****\Documents\My_projects\highway_project ) and Press Enter.
+            iv)Now type    python Higway_project_CoOrdinates.py -dd eye_detector.dat 	and Press Enter.

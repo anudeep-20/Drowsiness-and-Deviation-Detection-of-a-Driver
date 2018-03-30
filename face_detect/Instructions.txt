@@ -1,0 +1,22 @@
+Note : Download the required packages for this project through pip
+
+a.)Dataset : 
+	1)If you have a Dataset.(In the form of Images)
+		i)paste the available Dataset in dataset folder.
+	2)If you don't have a dataset in any form.
+		i)  Open image_capturer.py python file and run it.
+		ii) The programs prompts the User to give an ID for creating a dataset. Note the given ID for future Use.
+		iii)Give some different types of Expressions and Wait until the program completes taking 200 images.
+		iv) Now the dataset is created and is stored in dataset folder.
+
+b.)Trained .yml file generation:
+	1)If you have a trained .yml file skip a,b steps by pasting the .yml in yml_files folder.
+	2)if you don't have a yml file create one using the above dataset.
+		i)  Open trained_yml_generator.py python file and run it (Or double-click the python file.)
+		ii) Copy the trained .yml file which is located in yml_files folder.
+		iii)Go back by one directory and Paste this .yml file in yml_files_main folder.
+
+c.)For Testing whether the face Detection is working or not follow the below steps.
+	1)Open face_detector.py file.
+	2)Change the Names of the Respective Persons given for thier respective ID's given in step-a in the indicated field.
+	3)Now, all set to run the Program and name of the detected Person Appears.
